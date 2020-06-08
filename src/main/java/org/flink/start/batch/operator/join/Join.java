@@ -1,4 +1,4 @@
-package org.flink.start.batch;
+package org.flink.start.batch.operator.join;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.DataSet;

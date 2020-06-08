@@ -1,4 +1,4 @@
-package org.flink.start.batch;
+package org.flink.start.batch.operator.reduce;
 
 import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.java.DataSet;

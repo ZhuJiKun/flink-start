@@ -1,4 +1,4 @@
-package org.flink.start.batch;
+package org.flink.start.batch.operator.map;
 
 import org.apache.flink.api.common.functions.MapPartitionFunction;
 import org.apache.flink.api.java.DataSet;
