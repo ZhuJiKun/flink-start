@@ -8,6 +8,8 @@ import org.apache.flink.api.java.functions.KeySelector;
 
 /**
  * 以指定顺序对指定字段上的数据集的所有分区进行本地排序。
+ *
+ * TODO: 待验证
  */
 public class SortPartition {
 
