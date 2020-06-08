@@ -35,9 +35,8 @@ public class MapPartition {
              */
             @Override
             public void mapPartition(Iterable<Integer> iterable, Collector<Integer> collector) throws Exception {
-                Iterator<Integer> iterator = iterable.iterator();
-                while (iterator.hasNext()) {
-                    collector.collect(iterator.next() * 2); // 输出 元素*2
+                for (Integer integer : iterable) {
+                    collector.collect(integer * 2); // 输出 元素*2
                 }
             }
         });
