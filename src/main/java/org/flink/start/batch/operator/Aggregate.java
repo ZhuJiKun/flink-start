@@ -1,4 +1,4 @@
-package org.flink.start.batch;
+package org.flink.start.batch.operator;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.DataSet;
@@ -12,7 +12,7 @@ public class Aggregate {
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         DataSet<Integer> dataSet = env.fromElements(1, 2, 5, 4, 6, 8, 0, 10, 2);
 
-        // Aggregating on field positions is only possible on tuple data types.
+        // Aggregating on field positions is only possible on tuple data types 聚合操作只支持tuple下标选择器
         DataSet<Tuple2<Integer, Integer>> set = dataSet.map(new MapFunction<Integer, Tuple2<Integer, Integer>>() {
             @Override
             public Tuple2<Integer, Integer> map(Integer integer) throws Exception {

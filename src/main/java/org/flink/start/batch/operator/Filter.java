@@ -1,4 +1,4 @@
-package org.flink.start.batch;
+package org.flink.start.batch.operator;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.DataSet;

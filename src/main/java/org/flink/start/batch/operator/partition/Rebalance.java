@@ -1,4 +1,4 @@
-package org.flink.start.batch.operator;
+package org.flink.start.batch.operator.partition;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.DataSet;
@@ -18,7 +18,8 @@ public class Rebalance {
 
 
         /*
-         *  强制重新平衡数据集，即，数据集均匀分布于以下任务的所有并行实例中。这可以帮助在严重数据倾斜和计算密集型操作的情况下提高性能。
+         *  对数据集进行再平衡，重分区，消除数据倾斜
+         *  数据集均匀分布于以下任务的所有并行实例中。这可以帮助在严重数据倾斜和计算密集型操作的情况下提高性能。
          *  重要:该操作将整个数据集在网络上进行了洗牌，并且花费大量的时间。
          */
 
